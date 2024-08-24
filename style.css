@@ -29,7 +29,6 @@ main {
   grid-template-areas:
     "section aside"
     "attribution attributon";
-  width: 100%;
 }
 section {
   grid-area: section;
@@ -77,7 +76,42 @@ section h1:nth-child(1) {
     order: -1;
   }
 }
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--red);
+  border-radius: 40px;
+  padding: 0px;
+  position: relative;
+  bottom: 22px;
+  left: 17%;
+  width: 156px;
+}
 
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 156px;
+  border: 1px solid transparent;
+}
+
+.btn-quantity {
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #fff;
+}
+
+.quantity {
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+}
 .category-dessert {
   font-size: 14px;
   color: var(--rose-500);
@@ -203,25 +237,13 @@ section h1:nth-child(1) {
 #confirm-order:active {
   background-color: var(--red-dark);
 }
-/* section .dessert-container:nth-child(2) {
-}
-section .dessert-container:nth-child(3) {
-}
-section .dessert-container:nth-child(4) {
-}
-section .dessert-container:nth-child(5) {
-}
-section .dessert-container:nth-child(6) {
-}
-section .dessert-container:nth-child(7) {
-}
-section .dessert-container:nth-child(8) {
-}
-section .dessert-container:nth-child(9) {
-}
-section .dessert-container:nth-child(10) {
-} */
 
+.img-dessert-active {
+  border: 2px solid var(--red);
+}
+.button-active {
+  background-color: var(--red);
+}
 .attribution {
   grid-area: attribution;
   font-size: 11px;
