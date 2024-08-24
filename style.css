@@ -29,6 +29,7 @@ main {
   grid-template-areas:
     "section aside"
     "attribution attributon";
+  width: 100%;
 }
 section {
   grid-area: section;
