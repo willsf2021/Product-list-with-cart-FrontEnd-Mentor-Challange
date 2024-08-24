@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main>
+      <section id="section-main">
+        <h1>Desserts</h1>
+      </section>
+      <aside id="cart-aside">
+        <p id="your-cart">Your Cart (<span id="resume-cart">0</span>)</p>
+        <div id="cart"></div>
+        <div id="order-total">
+          <p>Order Total</p>
+          <p id="total-price">$<span id="total-price-value">0.00</span></p>
+        </div>
+        <div id="carbon-neutral">
+          <img src="assets/images/icon-carbon-neutral.svg" alt="" />
+          <p>This is a <span>carbon-neutral</span> Delivery</p>
+        </div>
+        <button id="confirm-order">Confirm Order</button>
+      </aside>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/willsf2021">Wilson Júnior</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
